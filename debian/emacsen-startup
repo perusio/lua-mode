@@ -1,0 +1,17 @@
+;; -*-emacs-lisp-*-
+
+(if (not (file-exists-p "/usr/share/emacs/site-lisp/lua-mode"))
+    (message "Package lua-mode removed but not purged.  Skipping setup.")
+
+  ;; The lua-mode package follows the Debian/GNU Linux 'emacsen' policy
+  ;; and byte-compiles its elisp files for each 'emacs flavor'.  The compiled
+  ;; code is then installed in a subdirectory of the respective site-lisp
+  ;; directory.
+  (debian-pkg-add-load-path-item
+   (concat 
+    "/usr/share/" (symbol-name debian-emacs-flavor) "/site-lisp/lua-mode"))
+
+  ;; Automatically start lua files in lua-mode.
+  (add-to-list (quote auto-mode-alist) (quote ("\\.lua\\'" . lua-mode)))
+
+  (autoload 'lua-mode "lua-mode" "Major mode for editing Lua code." t))

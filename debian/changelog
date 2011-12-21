@@ -1,0 +1,132 @@
+lua-mode (20111107-perusio.1.0) unstable; urgency=low
+
+  * New upstream version. First packaging of mine.
+
+ -- António P. P. Almeida <appa@perusio.net>  Wed, 21 Dec 2011 01:01:42 +0000
+
+lua-mode (20110121-1) unstable; urgency=low
+
+  * New upstream version, which includes patch multiline-strings.diff.
+  * Upstream has apparently moved to github.
+
+ -- Jens Peter Secher <jps@debian.org>  Tue, 22 Mar 2011 07:06:01 +0100
+
+lua-mode (20100617-1) experimental; urgency=low
+
+  * New upstream version.
+    (Closes: #601678)
+  * Removed a keybinding patch and some open bugs because they seem to be
+    obsoleted by the new uptream version, but it is somewhat hard to tell
+    in the absence of changelogs and release notes, but here we go:
+    (Closes: #546465,#546463)
+  * Added Lua 5.1 to the enhancement list.
+    (Closes: #574519)
+
+ -- Jens Peter Secher <jps@debian.org>  Sat, 30 Oct 2010 10:30:35 +0200
+
+lua-mode (20071122-4) unstable; urgency=low
+
+  * Converted to dpkg-source format 3.0 (quilt).
+  * Use mercurial-buildpackage for repository maintenance, so old
+    repository does not exist any more.
+  * Include ${misc:Depends} so that debhelper can inject items into the
+    dependency list.
+  * Bumped Standards-Version to 3.9.1, no change.
+
+ -- Jens Peter Secher <jps@debian.org>  Sat, 30 Oct 2010 09:49:01 +0200
+
+lua-mode (20071122-3) unstable; urgency=low
+  
+  * Leave elisp source file links next to byte-compiled files so that info
+    system can locate the source code.
+    (Closes: #543492)
+  * Fontify multiline strings.
+    (Closes: #466130)  
+  * Use quilt instead of dpatch for patches.
+  * Use debhelper 7.
+  * Upgraded to Standards-Version 3.8.3.
+    + Added a Homepage control field.
+    + Added a Vcs-Hg control filed to indicate the location of the public
+      repository.
+    + Describe how to use quilt in Debian.source (thanks to Russ Allbery).
+  * Do not load site/init files during byte compilation.
+
+ -- Jens Peter Secher <jps@debian.org>  Sun, 30 Aug 2009 17:20:20 +0200
+
+lua-mode (20071122-2) unstable; urgency=low
+
+  * Changed unusual keyboard binding to standard ones, thanks to Trent
+    W. Buck.
+    (Closes: bug#468298)
+  * Bumped Standards-Version to 3.7.3.
+
+ -- Jens Peter Secher <jps@debian.org>  Sun, 02 Mar 2008 10:32:36 +0100
+
+lua-mode (20071122-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bumped debhelper compatibility version to 5.
+
+ -- Jens Peter Secher <jps@debian.org>  Sun, 02 Dec 2007 13:24:50 +0100
+
+lua-mode (20070703-2) unstable; urgency=low
+
+  * Use autoload instead of load, thanks to Trent W. Buck.
+    (Closes: bug#446234)
+
+ -- Jens Peter Secher <jps@debian.org>  Mon, 15 Oct 2007 22:05:28 +0200
+
+lua-mode (20070703-1) unstable; urgency=low
+
+  * New upstream release.
+  * Simplify install, removal, and load-path by using symlinks instead of
+    copying source files.
+
+ -- Jens Peter Secher <jps@debian.org>  Sun, 22 Jul 2007 23:17:59 +0200
+
+lua-mode (20061208-1) unstable; urgency=low
+
+  * New upstream release. 
+    (Closes: bug#402133)
+    - which fixes typo in docstring.
+    (Closes: bug#394206) 
+    - which obsoletes my patch for multiline comments, so dpatch is no
+      longer needed.
+  * Include a watch file.
+
+ -- Jens Peter Secher <jps@debian.org>  Sun, 10 Dec 2006 13:30:39 +0100
+
+lua-mode (20060625-1) unstable; urgency=low
+
+  * New upstream release.
+    (Closes: bug#390588)
+  * Bumped Standards-Version to 3.7.2.
+
+ -- Jens Peter Secher <jps@debian.org>  Wed,  4 Oct 2006 22:56:21 +0200
+
+lua-mode (1.74-2) unstable; urgency=low
+
+  * Show commented out multiline comments as non-comments... 'mkay!
+    (Closes: bug#350277)
+
+ -- Jens Peter Secher <jps@debian.org>  Thu,  9 Feb 2006 21:55:57 +0100
+
+lua-mode (1.74-1) unstable; urgency=low
+
+  * New upstream version.
+    + Fixes broken indentation.
+    (Closes: bug#345316)
+  * Use the right path to the lua executable.
+  * Automatically turn on lua-mode for lua files.
+  * Make sure that Emacs Help can find the source code by including the
+    location in load-path.
+
+ -- Jens Peter Secher <jps@debian.org>  Mon,  2 Jan 2006 22:25:57 +0100
+
+lua-mode (1.26-1) unstable; urgency=low
+
+  * Initial release.
+    (Closes: bug#266160)
+
+ -- Jens Peter Secher <jps@debian.org>  Tue,  2 Nov 2004 21:26:59 +0100
+

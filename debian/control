@@ -1,0 +1,18 @@
+Source: lua-mode
+Section: editors
+Priority: optional
+Maintainer: Antonio P. P. Almeida <appa@perusio.net>
+Build-Depends: debhelper (>= 7), emacs23 | emacsen
+Standards-Version: 3.9.1
+Vcs-Git: https://github.com/perusio/lua-mode.git
+Homepage: https://github.com/immerrr/lua-mode
+
+Package: lua-mode
+Architecture: all
+Depends: emacs23 | emacsen, ${misc:Depends}
+Enhances: lua50, lua5.1
+Description: Emacs mode for editing Lua programs
+ This emacs mode provides syntax highlighting and automatic
+ indentation for Lua, as well as sending lines/regions/files to a lua
+ interpreter.  You will need this if you write Lua programs using
+ Emacs.

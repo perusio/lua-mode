@@ -1,4 +1,15 @@
-# Lua mode
+# Lua mode debianization
+
+## Introduction
+
+This repository contains a debianized version of the
+[`lua-mode`](https://github.com/immerrr/lua-mode) for Emacs. It tracks upstream
+as close as possible.
+
+You can **get** the debian package from my
+[repository](debian.perusio.net). **Instructions** included.
+
+## Original README
 
 **lua-mode** is a major mode for editing Lua sources in Emacs. After a rather long hiatus, it's back in active development stage, so make sure to visit [homepage](https://github.com/immerrr/lua-mode) frequently enough.
 

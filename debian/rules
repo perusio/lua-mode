@@ -1,0 +1,38 @@
+#!/usr/bin/make -f
+
+PACKAGE=lua-mode
+
+get-orig-source:
+	wget http://luaforge.net/frs/download.php/4628/lua-mode.el
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+
+build:
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+	dh_install lua-mode.el usr/share/emacs/site-lisp/$(PACKAGE)
+
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_installemacsen
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary-arch: build install
+
+binary: binary-indep binary-arch
+
+.PHONY: get-orig-source build clean install binary-indep binary-arch binary

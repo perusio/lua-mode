@@ -1,0 +1,35 @@
+This package was debianised by Jens Peter Secher <jps@debian.org> 
+on Mon, 16 Aug 2004 23:57 +0200.
+
+It was downloaded from 
+http://lua-users.org/files/wiki_insecure/editors/lua-mode.el
+
+Upstream Author: 
+  2006 Juergen Hoetzel <juergen@hoetzel.info>
+  2004 various (support for Lua 5 and byte compilation)
+  2001 Christian Vogler <cvogler@gradient.cis.upenn.edu>
+  1997 Bret Mogilefsky <mogul-lua@gelatinous.com> starting from
+       tcl-mode by Gregor Schmid <schmid@fb3-s7.math.tu-berlin.de>
+       with tons of assistance from
+       Paul Du Bois <pld-lua@gelatinous.com> and
+       Aaron Smith <aaron-lua@gelatinous.com>.
+
+Copyright (C) 1997, 2001, 2004, 2006 Free Software Foundation, Inc.
+
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+  MA 02110-1301, USA.
+
+The full GNU General Public License is located in the file
+/usr/share/common-licenses/GPL-2 on a Debian system.
