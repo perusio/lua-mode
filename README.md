@@ -15,7 +15,7 @@ You can **get** the debian package from my
 
 If you have a problem or a suggestion about **lua-mode**, please, let me know about it via github's [Issue Tracker](https://github.com/immerrr/lua-mode/issues).
 
-## INSTALLATION
+## Installation
 
 To install, just copy `lua-mode.el` into a directory on your load-path (and optionally byte-compile it).
 To set up Emacs to automatically edit files ending in `.lua` or with a lua hash-bang line using **lua-mode**
@@ -25,7 +25,7 @@ add the following to your init file:
     (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
     (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
-## USAGE
+## Usage
 
 **lua-mode** supports c-mode style formatting and sending of lines/regions/files to a Lua interpreter. An
 interpreter (see variable `lua-default-application`) will be started if you try to send some code and none
