@@ -1,3 +1,9 @@
+lua-mode (2010127-perusio.1.0) unstable; urgency=low
+
+  * Synching with the upstream.
+
+ -- António P. P. Almeida <appa@perusio.net>  Fri, 27 Jan 2012 18:19:28 +0000
+
 lua-mode (20111107-perusio.1.0) unstable; urgency=low
 
   * New upstream version. First packaging of mine.
